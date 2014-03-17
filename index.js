@@ -3,6 +3,20 @@ $(document).ready(function(){
 
  //QUESTION 1
 
+function Dog() {
+}
+
+Dog.prototype.bark = function() {
+	console.log("woof");
+};
+
+function ShibaInu() {
+	ShibaInu.prototype.constructor = Dog.prototype.constructor;
+}
+
+ShibaInu.prototype.bark = function() {
+	console.log("much wow very javascript");
+};
  //QUESTION 3
 
  $(".secondbutton").click(function(){
